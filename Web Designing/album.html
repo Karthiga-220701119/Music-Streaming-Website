@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album - Music Streaming Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+ 
+        .side-navbar {
+          animation: slideIn 0.5s forwards;
+        }
+        
+        @keyframes slideIn {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+        
+        /* Album Details Animation */
+        .album-details {
+          animation: fadeIn 0.5s forwards;
+        }
+        
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        
+        /* Track List Animation */
+        .track-list {
+          animation: slideUp 0.5s forwards;
+        }
+        
+        @keyframes slideUp {
+          0% {
+            transform: translateY(100%);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+        
+        /* Track Item Animation */
+        .track-item {
+          animation: bounceIn 0.5s forwards;
+        }
+        
+        @keyframes bounceIn {
+          0% {
+            transform: scale(0.5);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        
+        /* Button Animations */
+        .play-btn, .like-btn, .add-btn {
+          transition: background-color 0.2s ease-in-out;
+        }
+        
+        .play-btn:hover, .like-btn:hover, .add-btn:hover {
+          background-color: #333;
+          color: #fff;
+        }
+        
+        .play-btn:active, .like-btn:active, .add-btn:active {
+          background-color: #444;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+            </style>
+</head>
+<body>
+    
+    <nav class="side-navbar">
+        <div class="navbar-logo">Lyrify</div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="album.html">Albums</a>
+            <a href="playlist.html">Playlists</a>
+            <a href="artist.html">Artists</a>
+        </div>
+    </nav>
+
+   
+    <div class="main-content">
+        
+        <header class="header">
+            <div class="navbar-buttons">
+                
+            </div>
+        </header>
+
+       
+        <div class="album-details">
+            <div class="album-cover">
+                <img src="images/kalank.jpg" alt="Album 1 Cover">
+            </div>
+            <div class="album-info">
+                <h2>Kalank</h2>
+                <p>Number of Tracks: 1</p>
+                <p>Total Duration: 39 min 58 secs</p>
+                <p>Artist: Pritam</p>
+            </div>
+            <div class="album-actions">
+                <button class="play-btn">Play</button>
+                <button class="like-btn">Like</button>
+                <button class="add-btn">Add to Playlist</button>
+            </div>
+        </div>
+
+     
+        <div class="track-list">
+            <div class="track-item">
+                <span class="track-name">Ghar More Pardesiya</span>
+                <div class="track-actions">
+                    <button class="play-btn">▶</button>
+                    <button class="like-btn">♥</button>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="track-item">
+                <span class="track-name">First class</span>
+                <div class="track-actions">
+                    <button class="play-btn">▶</button>
+                    <button class="like-btn">♥</button>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="track-item">
+                <span class="track-name">Kalank-Title Track </span>
+                <div class="track-actions">
+                    <button class="play-btn">▶</button>
+                    <button class="like-btn">♥</button>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="track-item">
+                <span class="track-name">Aira Gaira </span>
+                <div class="track-actions">
+                    <button class="play-btn">▶</button>
+                    <button class="like-btn">♥</button>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="track-item">
+                <span class="track-name">Tabaah Ho Gaye</span>
+                <div class="track-actions">
+                    <button class="play-btn">▶</button>
+                    <button class="like-btn">♥</button>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

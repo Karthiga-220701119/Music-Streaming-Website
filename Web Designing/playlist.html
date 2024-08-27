@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrify - Playlists</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        .playlists {
+          animation: fadeIn 0.5s forwards;
+        }
+        
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        
+        /* Playlist Grid Animation */
+        .playlist-grid {
+          animation: slideUp 0.5s forwards;
+        }
+        
+        @keyframes slideUp {
+          0% {
+            transform: translateY(100%);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+        
+        /* Playlist Item Animation */
+        .playlist-item {
+          animation: bounceIn 0.5s forwards;
+        }
+        
+        @keyframes bounceIn {
+          0% {
+            transform: scale(0.5);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        
+        /* Playlist Item Hover Animation */
+        .playlist-item:hover {
+          animation: pulse 0.5s forwards;
+        }
+        
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        
+        /* Playlist Overlay Animation */
+        .playlist-overlay {
+          animation: fadeIn 0.5s forwards;
+        }
+        
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        
+        /* Play Button Animation */
+        .play-button {
+          animation: fadeIn 0.5s forwards;
+        }
+        
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+            </style>
+</head>
+<body>
+    <nav class="side-navbar">
+        <div class="navbar-logo">Lyrify</div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="album.html">Albums</a>
+            <a href="playlist.html">Playlists</a>
+            <a href="artist.html">Artists</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        
+        <header class="header">
+            <div class="navbar-buttons">
+                
+            </div>
+        </header>
+
+        <section class="playlists">
+            <h1>Your Playlists</h1>
+            <div class="playlist-grid">
+                <div class="playlist-item">
+                    <img src="images/chillvibes.jpg" alt="Playlist 1">
+                    <div class="playlist-overlay">
+                        <span class="playlist-name">Chill Vibes</span>
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="images/havocbrothers.jpeg" alt="Playlist 2">
+                    <div class="playlist-overlay">
+                        <span class="playlist-name">Havoc Brothers</span>
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="images/tamil_songs.jpeg" alt="Playlist 3">
+                    <div class="playlist-overlay">
+                        <span class="playlist-name">Tamil songs 2024</span>
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="images/Massvibe.jpeg" alt="Playlist 4">
+                    <div class="playlist-overlay">
+                        <span class="playlist-name">Kuthu songs</span>
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="images/ilayaraja.jpeg" alt="Playlist 4">
+                    <div class="playlist-overlay">
+                        <span class="playlist-name">Ilayaraja Hits</span>
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="playlist-item">
+                    <img src="images/rise.webp" alt="Playlist 4">
+                    <div class="playlist-overlay">
+                        <span class="playlist-name">Rise</span>
+                        <div class="play-button">▶</div>
+                    </div>
+                </div>
+                <div class="track-actions">
+                    <button class="add-track-button">+ Add Track</button>
+                    <button class="remove-track-button">- Remove Track</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

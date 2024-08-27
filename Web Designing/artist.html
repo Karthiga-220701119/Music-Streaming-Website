@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrify - Artists</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        .side-navbar {
+          animation: slideIn 0.5s forwards;
+        }
+        
+        @keyframes slideIn {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+        
+        /* Artist Grid Animation */
+        .artist-grid {
+          animation: fadeIn 0.5s forwards;
+        }
+        
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        
+        /* Artist Item Animation */
+        .artist-item {
+          animation: bounceIn 0.5s forwards;
+        }
+        
+        @keyframes bounceIn {
+          0% {
+            transform: scale(0.5);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        
+        /* Add Artist Button Animation */
+        .add-artist {
+          animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        
+        /* Artist Image Animation */
+        .artist-item img {
+          transition: transform 0.2s ease-in-out;
+        }
+        
+        .artist-item:hover img {
+          transform: scale(1.1);
+        }
+        
+        /* Artist Name Animation */
+        .artist-name {
+          transition: color 0.2s ease-in-out;
+        }
+        
+        .artist-item:hover .artist-name {
+          color: #333;
+        }
+            </style>
+</head>
+<body>
+    <nav class="side-navbar">
+        <div class="navbar-logo">Lyrify</div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="album.html">Albums</a>
+            <a href="playlist.html">Playlists</a>
+            <a href="artist.html">Artists</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <header class="header">
+            <div class="navbar-buttons">
+                <!-- Additional buttons if necessary -->
+            </div>
+        </header>
+
+        <section class="artists">
+            <h1>Favorite Artists</h1>
+            <div class="artist-grid">
+                <div class="artist-item">
+                    <a href="albums/artist1.html">
+                        <img src="images/Harris Jayaraj.jpeg" alt="Harris Jayaraj">
+                    </a>
+                    <div class="artist-info">
+                        <h2>Harris Jayaraj</h2>
+                    </div>
+                </div>
+
+                <div class="artist-item">
+                    <a href="albums/artist2.html">
+                        <img src="images/ani.webp" alt="Anirudh Ravichander">
+                    </a>
+                    <div class="artist-info">
+                        <h2>Anirudh Ravichander</h2>
+                    </div>
+                </div>
+
+                <div class="artist-item">
+                    <a href="albums/artist3.html">
+                        <img src="images/GV.jpeg" alt="G.V.Prakash">
+                    </a>
+                    <div class="artist-info">
+                        <h2>G.V.Prakash</h2>
+                    </div>
+                </div>
+
+                <div class="artist-item">
+                    <a href="albums/artist4.html">
+                        <img src="images/neon.jpeg" alt="Neon Trees">
+                    </a>
+                    <div class="artist-info">
+                        <h2>Neon Trees</h2>
+                    </div>
+                </div>
+
+                <div class="artist-item">
+                    <a href="albums/artist5.html">
+                        <img src="images/raj.jpeg" alt="Raj Barman">
+                    </a>
+                    <div class="artist-info">
+                        <h2>Raj Barman</h2>
+                    </div>
+                </div>
+
+                <div class="artist-item">
+                    <a href="albums/artist6.html">
+                        <img src="images/Shweta_Mohan.jpg" alt="Shweta Mohan">
+                    </a>
+                    <div class="artist-info">
+                        <h2>Shweta Mohan</h2>
+                    </div>
+                </div>
+
+                <div class="artist-item add-artist">
+                    <div class="add-icon">+</div>
+                    <span class="artist-name">Add Artist</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
